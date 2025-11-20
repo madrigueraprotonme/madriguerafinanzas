@@ -16,10 +16,10 @@ with st.container():
             <div style="text-align: center;">
                 <h1>CURSO DE INVERISION</h1>
                 <h2>Bienvenido a nuestro programa de formacion </h2>
-                <p>Aprenderás a invertir en bolsa, junto al colectivo de inversores, utilizando 
+                <p><span style="color:rgb(255,75,75)">Aprenderas a invertir </span> en todo tipo de activo en bolsa, junto al colectivo de inversores, utilizando 
                 nuestra sistema, que te permitirá invertir en bolsa de forma sencilla y segura.
                 no esperes mas si quieres que tus ahorros no se devaluen con el paso del tiempo
-                conoce los secretos y alcanlza la libertad                
+                conoce los secretos y <span style="color:rgb(255,75,75)">alcanlza la libertad</span>                
                 </p>
                 
             </div>

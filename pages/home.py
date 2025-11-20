@@ -46,9 +46,10 @@ with st.container():
             
             st.markdown(
                 """
-                <div style="border-right: 2px solid #bbb; height: 300px; margin-left:20px;background-color: black; color: white; padding: 40px 20px; border-radius: 12px;">
-                    <h1 style="text-align:center">¿Es importante aprender a invertir?</h1>
-                    <h1 style="text-align:center; color:rgb(255,75,75)">SI</h1>
+                <div style="height: 300px;background-color: black; color: white; border-radius: 12px; display:flex;flex-direction:column;justify-content: center; align-items: center;">
+                    <h3 style="text-align:center">¿Es importante aprender a invertir?</h3>
+                    <h1 style=" color:rgb(255,75,75);font-size:50px">SI
+                    </h1>
                 </div>
                 
                 """,
@@ -58,7 +59,7 @@ with st.container():
         with col2:
             st.markdown(
                 """
-                <div style="text-align:center;display:flex;flex-direction:column;justify-content: center; align-items: center;height:300px">
+                <div style="text-align:center;display:flex;flex-direction:column;justify-content: center; align-items: center;height:300px; width:100%">
                     <h3>La respuesta es rotunda, y cuanto antes empieces mejor</h3>
                     <p>Multiplica tus ahorros, no dependas de nadie.</p>
                     <p>Liberta es lo que nos merecemos todos no unos pocos.</p>
@@ -83,9 +84,9 @@ with st.container():
             
             st.markdown(
                 """
-                <div style="border-right: 2px solid #bbb; height: 300px; margin-left:20px;background-color: black; color: white; padding: 40px 20px; border-radius: 12px;">
+                <div style="height: 300px; ;background-color: black; color: white;  border-radius: 12px;">
                     <h1 style="text-align:center; color:rgb(255,255,255)">SI</h1>
-                    <h2 style="text-align:center; color:rgb(255,75,75)">Protegelos a todos</h2>  
+                    <h2 style="margin-left:15px;text-align:center; color:rgb(255,75,75)">Protegelos</h2>  
                     <p style="text-align:center; color:rgb(255,75,75)">Enseñales a ellos con tu nuevo conocimiento y experiencia</p>
                 </div>
                 
@@ -97,7 +98,7 @@ with st.container():
             st.markdown(
                 """
                 <div style="text-align:center;display:flex;flex-direction:column;justify-content: center; align-items: center;height:300px">
-                    <h1>¿Es tu familia tu gran preoucpacion?</h1>
+                    <h3>¿Es tu familia tu gran preocupacion?</h3>
                     
                 </div>
                 """,
@@ -108,7 +109,7 @@ st.write("")
 st.write("")
 st.divider()      
     
-    
+#bloque de menu llamativo
 with st.container():
 
     
@@ -125,62 +126,24 @@ with st.container():
             """,
             unsafe_allow_html=True,
         )
-        col1,col2,col3,col4=st.columns([1,1,1,1],gap="large")
+        col1,col2,col3=st.columns([1,1,1],gap="large")
         with col1:
-            st.markdown(
-                """
-                <div style="text-align:center">
-                    <h2>Cursos</h2>
-                    
-                </div>
-                
-                """,
-                unsafe_allow_html=True,
-            )
+            
             st.image("metodo.jpeg",width="stretch")
-            ver_curso=st.button("Ver madriguera",type="primary",width="stretch",key="1")
+            ver_curso=st.button("Cursos",type="primary",width="stretch",key="1")
            
         with col2:
-            st.markdown(
-                """
-                <div style="text-align:center">
-                    <h2>APP</h2>
-                    
-                </div>
-                
-                """,
-                unsafe_allow_html=True,
-            )
+            
             st.image("metodo.jpeg",width="stretch")
-            ver_app=st.button("Ver madriguera",type="primary",width="stretch",key="2")
+            ver_app=st.button("Screaner",type="primary",width="stretch",key="2")
             
         with col3:
-            st.markdown(
-                """
-                <div style="text-align:center;">
-                    <h2>Recursos</h2>
-                    
-                </div>
-                
-                """,
-                unsafe_allow_html=True,
-            )
             st.image("metodo.jpeg",width="stretch")
-            st.button("Ver madriguera",type="primary",width="stretch",key="3")
+            st.button("Recuros",type="primary",width="stretch",key="3")
+        
     
-        with col4:
-            st.markdown(
-                """
-                <div style="text-align:center">
-                    <h2>Mentorias</h2>
-                    
-                </div>
-                
-                """,
-                unsafe_allow_html=True,
-            )
-            st.image("metodo.jpeg",width="stretch")
-            st.button("Ver madriguera",type="primary",width="stretch",key="4")
+    
+    
 if ver_curso:
     st.switch_page("pages/curso.py")
     
