@@ -4,7 +4,9 @@ import os
 from dotenv import load_dotenv
 import stripe
 load_dotenv()
-API_URL="http://127.0.0.1:8000/"
+#API_URL="http://127.0.0.1:8000/"
+API_URL = "https://madriguerafinanzasbackend.onrender.com"
+
 STRIPE_PUBLIC_KEY=os.getenv("STRIPE_PUBLIC_KEY")
 stripe.api_key=STRIPE_PUBLIC_KEY
 
