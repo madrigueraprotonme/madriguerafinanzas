@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import requests
 import datetime
-#API_URL="http://127.0.0.1:8000/"
-API_URL=API_URL = "https://madriguerafinanzasbackend.onrender.com"
+API_URL="http://127.0.0.1:8000/"
+#API_URL=API_URL = "https://madriguerafinanzasbackend.onrender.com"
 
 usuario_logueado=st.session_state["Usuario"]
 

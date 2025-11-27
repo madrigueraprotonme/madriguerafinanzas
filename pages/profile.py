@@ -2,8 +2,8 @@ import streamlit as st
 import requests
 import pandas as pd
 
-#API_URL="http://127.0.0.1:8000/"
-API_URL = "https://madriguerafinanzasbackend.onrender.com"
+API_URL="http://127.0.0.1:8000/"
+#API_URL = "https://madriguerafinanzasbackend.onrender.com"
 
 st.header("Mi perfil")
 
@@ -29,7 +29,7 @@ with col1:
         with st.expander("Gestion de Riesgo %"):
             st.session_state["riesgo_global"]=st.slider("Riesgo Global",0,10,value=0,format="%d%%", width=300)
             st.session_state["riesgo_operacion"]=st.slider("Riesgo por operacion",0,10,value=0,format="%d%%",width=300)
-            colz,coly=st.columns([3,1])
+            colz,coly=st.columns([2,1])
             with coly:
                 actualizar_gestion_cartera=st.button("Actualizar",type="primary",key="1")
 
@@ -37,7 +37,7 @@ with col1:
         st.subheader("Capital")
         with st.expander("Capital inicial"):
             st.session_state["capital_inicial"]=st.number_input("Capital inicial",step=100,value=10000,width=300)
-            cola,colb=st.columns([3,1])
+            cola,colb=st.columns([2,1])
             with colb:
                 capital_inicial_setting=st.button("Actualizar",key="2",type="primary")            
 
