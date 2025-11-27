@@ -1,8 +1,14 @@
 import streamlit as st
 import requests
 import pandas as pd
-API_URL="http://127.0.0.1:8000/"
+from dotenv import load_dotenv
+
+load_dotenv()
+#API_URL="http://127.0.0.1:8000/"
 #API_URL = "https://madriguerafinanzasbackend.onrender.com"
+
+API_URL=os.getenv("API_URL")
+
 st.header("Loggin")
 
 usuario=st.text_input("Usuario")
